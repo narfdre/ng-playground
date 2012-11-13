@@ -1,0 +1,31 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular-resource.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div ng-controller="testCtrl">
+        <label>Name:</label>
+        <input type="text" ng-model="yourName" ng-maxlength="5" placeholder="Enter a name here">
+        <input type="checkbox" value="test" name="name" ng-model="testing">
+        <input type="radio" value="test1" name="name1" ng-model="testing1">
+        <input type="radio" value="test2" name="name1" ng-model="testing1">
+        <a href="" ng-click="yo(yourName)">Yo!</a>
+        <a href="" ng-click="addUser(yourName)">Add User</a>
+        <hr>
+        <h1>Hello {{yourName}}!</h1>
+        <h2>Checkbox: {{testing}}</h2>
+        <h3>Radio: {{testing1}}</h3>
+        <ul>
+          <li ng-repeat="person in data">
+            {{person.name}}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
