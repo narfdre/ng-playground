@@ -1,1 +1,1 @@
-web: run Server
+web: camping server.rb
