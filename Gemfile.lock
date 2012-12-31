@@ -4,11 +4,18 @@ GEM
     camping (2.1.523)
       mab
       rack (>= 1.0)
+    daemons (1.1.9)
+    eventmachine (1.0.0)
     mab (0.0.2)
     rack (1.4.1)
+    thin (1.5.0)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   camping
+  thin

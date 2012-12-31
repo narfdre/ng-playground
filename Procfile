@@ -1,1 +1,1 @@
-web: camping server.rb
+web: camping -s thin -p $PORT server.rb
